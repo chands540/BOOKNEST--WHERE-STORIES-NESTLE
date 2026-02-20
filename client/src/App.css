@@ -1,0 +1,779 @@
+/* Navbar Styles */
+.navbar-custom {
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem 0;
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white !important;
+  letter-spacing: 1px;
+}
+
+.navbar-brand:hover {
+  color: #3498db !important;
+}
+
+.nav-link-custom {
+  color: rgba(255, 255, 255, 0.9) !important;
+  margin: 0 0.5rem;
+  padding: 0.5rem 1rem !important;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav-link-custom:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: white !important;
+}
+
+.nav-link-custom.active {
+  background-color: rgba(52, 152, 219, 0.9);
+  color: white !important;
+  font-weight: 600;
+}
+
+/* NavDropdown improvements */
+.navbar-custom .dropdown-menu {
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  border: none;
+}
+
+.navbar-custom .dropdown-item {
+  transition: all 0.2s ease;
+  padding: 0.75rem 1.5rem;
+}
+
+.navbar-custom .dropdown-item:hover {
+  background-color: var(--accent-color);
+  color: white;
+}
+
+/* Book Card Styles */
+.book-card {
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.book-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.15);
+}
+
+.book-card img {
+  height: 300px;
+  object-fit: cover;
+  border-bottom: 3px solid var(--primary-color);
+  transition: transform 0.3s ease;
+}
+
+.book-card:hover img {
+  transform: scale(1.05);
+}
+
+.book-card .card-body {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.book-card .card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #000;
+  line-height: 1.4;
+  min-height: 2.8em;
+}
+
+.book-card .card-text {
+  color: #333;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.book-card .badge {
+  display: inline-block;
+  margin-bottom: 1rem;
+  padding: 0.4rem 0.8rem;
+}
+
+.book-price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--secondary-color);
+  margin-bottom: 0.5rem;
+}
+
+/* Hero Section */
+.hero-section {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  color: white;
+  padding: 4rem 0;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.hero-section p {
+  font-size: 1.3rem;
+  opacity: 0.9;
+}
+
+/* Dashboard Cards */
+.dashboard-card {
+  border: none;
+  border-radius: 10px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-5px);
+}
+
+.dashboard-card h3 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+.dashboard-card.users {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.dashboard-card.sellers {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: white;
+}
+
+.dashboard-card.books {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  color: white;
+}
+
+.dashboard-card.orders {
+  background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+  color: white;
+}
+
+/* Filter Section */
+.filter-section {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  margin-bottom: 2rem;
+  animation: slideUp 0.4s ease-out;
+  color: #000;
+}
+
+.filter-section h5 {
+  color: #000;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
+
+.filter-section .form-control,
+.filter-section .form-select {
+  border: 2px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 0.75rem;
+  transition: all 0.3s ease;
+}
+
+.filter-section .form-control:focus,
+.filter-section .form-select:focus {
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+}
+
+.filter-section .btn {
+  margin-top: 1.5rem;
+  width: 100%;
+}
+
+/* Cart */
+.cart-item {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+/* White Card Text Colors */
+.card {
+  color: #000;
+}
+
+.card h1,
+.card h2,
+.card h3,
+.card h4,
+.card h5,
+.card h6,
+.card p,
+.card span {
+  color: #000;
+}
+
+.cart-item h5,
+.cart-item p,
+.cart-item span {
+  color: #000;
+}
+
+.cart-item strong {
+  color: #000;
+}
+
+.cart-item:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.cart-item img {
+  width: 120px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.cart-item-details {
+  flex-grow: 1;
+}
+
+.cart-item-details h5 {
+  color: #000;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.cart-item-details .price {
+  font-weight: 700;
+  color: var(--secondary-color);
+  font-size: 1.2rem;
+}
+
+/* Form Styles */
+.form-container {
+  max-width: 500px;
+  margin: 3rem auto;
+  padding: 2.5rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  animation: slideUp 0.4s ease-out;
+  color: #000;
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #000;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.form-container .form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-container .form-label {
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 0.75rem;
+  display: block;
+}
+
+.form-container .form-control {
+  border: 2px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 0.85rem;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  color: #000;
+}
+
+.form-container .form-control:focus {
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+  outline: none;
+}
+
+.form-container .btn {
+  width: 100%;
+  padding: 0.85rem;
+  margin-top: 0.5rem;
+}
+
+.form-container p {
+  text-align: center;
+  margin-top: 1.5rem;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.form-container a {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.form-container a:hover {
+  text-decoration: underline;
+}
+
+/* Table Styles */
+.table-custom {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  margin-bottom: 2rem;
+}
+
+.table-custom table {
+  margin-bottom: 0;
+  color: #000;
+}
+
+.table-custom thead {
+  background: linear-gradient(135deg, var(--primary-color) 0%, #34495e 100%);
+  color: white;
+}
+
+.table-custom thead th {
+  padding: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+  border: none;
+  vertical-align: middle;
+  color: white;
+}
+
+.table-custom tbody tr {
+  border-bottom: 1px solid #e8e8e8;
+  transition: all 0.2s ease;
+}
+
+.table-custom tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.table-custom tbody tr:hover {
+  background-color: #f0f3f7;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.table-custom tbody td {
+  padding: 1rem 1.2rem;
+  vertical-align: middle;
+  color: #000;
+}
+
+.table-custom tbody td:last-child {
+  white-space: nowrap;
+}
+
+.table-custom .btn {
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.85rem;
+}
+
+/* Empty state styling */
+.empty-state {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.empty-state h4 {
+  color: var(--dark-text);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.empty-state p {
+  color: #999;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+/* Book Details Page */
+.books-bg.overlay h1,
+.books-bg.overlay h2,
+.books-bg.overlay h3,
+.books-bg.overlay h4,
+.books-bg.overlay h5,
+.books-bg.overlay h6 {
+  color: white;
+}
+
+.books-bg.overlay p,
+.books-bg.overlay span,
+.books-bg.overlay label {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.books-bg.overlay strong {
+  color: white;
+}
+
+.books-bg.overlay .text-muted {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.books-bg.overlay .text-danger {
+  color: #e74c3c !important;
+}
+
+.books-bg.overlay .text-success {
+  color: #27ae60 !important;
+}
+
+/* White Card Text Color Fix */
+.card,
+.white-card,
+.bg-white,
+.card-body,
+.book-card,
+.order-card {
+  color: #111 !important;
+}
+
+.card h1,
+.card h2,
+.card h3,
+.card h4,
+.card h5,
+.card p,
+.card span,
+.card small,
+.card label {
+  color: #111 !important;
+}
+
+.book-rating {
+  font-weight: 600;
+  color: #f5c518;
+  font-size: 0.95rem;
+  margin-top: 0.5rem;
+}
+
+/* Book content inside dark backgrounds - force dark text */
+.books-bg.overlay .book-card,
+.books-bg.overlay .book-card * {
+  color: #111 !important;
+}
+
+.books-bg.overlay .card {
+  color: #111 !important;
+}
+
+.books-bg.overlay .card h1,
+.books-bg.overlay .card h2,
+.books-bg.overlay .card h3,
+.books-bg.overlay .card h4,
+.books-bg.overlay .card h5,
+.books-bg.overlay .card h6,
+.books-bg.overlay .card p,
+.books-bg.overlay .card span,
+.books-bg.overlay .card small,
+.books-bg.overlay .card label,
+.books-bg.overlay .card strong,
+.books-bg.overlay .card .text-muted,
+.books-bg.overlay .card .text-danger {
+  color: #111 !important;
+}
+
+.books-bg.overlay .book-card h1,
+.books-bg.overlay .book-card h2,
+.books-bg.overlay .book-card h3,
+.books-bg.overlay .book-card h4,
+.books-bg.overlay .book-card h5,
+.books-bg.overlay .book-card h6,
+.books-bg.overlay .book-card p,
+.books-bg.overlay .book-card span,
+.books-bg.overlay .book-card small,
+.books-bg.overlay .book-card label,
+.books-bg.overlay .book-card strong {
+  color: #111 !important;
+}
+
+/* Cart item text dark on light background */
+.books-bg.overlay .cart-item,
+.books-bg.overlay .cart-item * {
+  color: #111 !important;
+}
+
+.books-bg.overlay .cart-item h5,
+.books-bg.overlay .cart-item p,
+.books-bg.overlay .cart-item span,
+.books-bg.overlay .cart-item strong,
+.books-bg.overlay .cart-item label {
+  color: #111 !important;
+}
+
+/* Heart styling for wishlist buttons */
+.btn-outline-danger {
+  color: #dc3545 !important;
+}
+
+.btn-outline-danger:hover {
+  color: white !important;
+}
+
+.books-bg.overlay .btn-outline-danger {
+  color: #dc3545 !important;
+}
+
+/* Loader */
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+
+.spinner-border-custom {
+  width: 4rem;
+  height: 4rem;
+  color: var(--accent-color);
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loading-text {
+  margin-top: 1rem;
+  color: #999;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+/* Badge Styles */
+.badge-status {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 2.5rem 1rem;
+  }
+  
+  .hero-section h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-section p {
+    font-size: 1rem;
+  }
+  
+  .book-card {
+    margin-bottom: 1.5rem;
+  }
+  
+  .book-card img {
+    height: 250px;
+  }
+  
+  .form-container {
+    margin: 2rem 1rem;
+    padding: 1.5rem;
+  }
+  
+  .form-container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .filter-section {
+    padding: 1.5rem 1rem;
+  }
+  
+  .cart-item {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .cart-item img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+  }
+  
+  .table-custom {
+    font-size: 0.85rem;
+  }
+  
+  .table-custom thead th {
+    padding: 0.75rem;
+    font-size: 0.75rem;
+  }
+  
+  .table-custom tbody td {
+    padding: 0.75rem;
+  }
+  
+  .table-custom .btn {
+    padding: 0.4rem 0.6rem;
+    font-size: 0.75rem;
+    margin-right: 0.25rem;
+  }
+  
+  .dashboard-card {
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .dashboard-card h3 {
+    font-size: 2rem;
+    margin: 0.5rem 0;
+  }
+  
+  .navbar-custom {
+    padding: 0.75rem 0;
+  }
+  
+  .nav-link-custom {
+    padding: 0.4rem 0.8rem !important;
+    font-size: 0.9rem;
+  }
+}
+
+/* Page Background Images */
+.overlay {
+  background: rgba(3, 10, 25, 0.72);
+  min-height: 100vh;
+  width: 100%;
+}
+
+.soft-overlay {
+  background: rgba(3, 10, 25, 0.55);
+  min-height: 100vh;
+  width: 100%;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.08) !important;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+}
+
+.home-bg {
+  background-image: url('/bg/home.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.books-bg {
+  background-image: url('/bg/books.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.dashboard-bg {
+  background-image: url('/bg/dashboard.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.auth-bg {
+  background-image: url('/bg/login.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+@media (max-width: 768px) {
+  .home-bg,
+  .books-bg,
+  .dashboard-bg,
+  .auth-bg {
+    background-attachment: scroll;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section h1 {
+    font-size: 1.5rem;
+  }
+  
+  .form-container {
+    margin: 1.5rem 0.5rem;
+    padding: 1rem;
+  }
+  
+  .form-container h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .book-card img {
+    height: 200px;
+  }
+  
+  .book-card .card-body {
+    padding: 1rem;
+  }
+  
+  .navbar-brand {
+    font-size: 1.3rem;
+  }
+  
+  .table-custom .btn {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+}
